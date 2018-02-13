@@ -1,0 +1,4 @@
+CREATE TABLE bookmarks (
+  name VARCHAR(255) PRIMARY KEY,
+  url  VARCHAR(255) NOT NULL,
+);
