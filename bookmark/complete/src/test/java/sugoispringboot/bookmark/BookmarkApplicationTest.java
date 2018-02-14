@@ -25,7 +25,7 @@ import static org.assertj.core.api.Assertions.assertThat;
   properties = {
     "spring.profiles.active: prod",
     "spring.datasource.driver-class-name: net.sf.log4jdbc.DriverSpy",
-    "spring.datasource.url: jdbc:log4jdbc:h2:mem:bookmark;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
+    "spring.datasource.url: jdbc:log4jdbc:h2:mem:test-bookmark;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE",
     "logging.level.jdbc: off",
     "logging.level.jdbc.sqltiming: debug"
   }
