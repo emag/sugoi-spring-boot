@@ -1,0 +1,17 @@
+version: "3.3"
+services:
+
+  db:
+    image: mariadb:10.3.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bookmark
+      MYSQL_USER: bookmark
+      MYSQL_PASSWORD: bookmark
+    ports:
+      - "3306:3306"
+
+  zipkin:
+    image: openzipkin/zipkin:2.4.6
+    ports:
+      - "9411:9411"

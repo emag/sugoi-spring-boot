@@ -1,0 +1,14 @@
+eureka:
+  client:
+    eureka-server-port: http://localhost:8761/
+
+spring:
+  application:
+    name: bookmark-decorator
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
+
+
